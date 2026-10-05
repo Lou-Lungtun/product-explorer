@@ -17,8 +17,7 @@ export default async function Home() {
         userName={session?.user?.name}
       />
       {/* ProductExplorer เป็นหน้ารายการเดิม ส่วน Google login แยกอยู่ด้านบน */}
-      {/* ส่งสถานะ session จาก server ให้หน้าจัดการสินค้าตัดสินใจว่าจะอนุญาตการเปลี่ยนแปลงหรือไม่ */}
-      <ProductExplorer isLoggedIn={Boolean(session?.user)} />
+      <ProductExplorer />
     </div>
   );
 }
